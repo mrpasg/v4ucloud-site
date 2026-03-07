@@ -1,24 +1,24 @@
 body{
-font-family: Arial, sans-serif;
+font-family:Arial;
 margin:0;
 background:#0B1220;
 color:white;
-}
-
-header{
-background:#0B1220;
-padding:20px;
 }
 
 .container{
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:20px 10%;
+}
+
+header{
+background:#020617;
 }
 
 nav a{
+margin-left:20px;
 color:white;
-margin:0 15px;
 text-decoration:none;
 }
 
@@ -29,19 +29,23 @@ background:linear-gradient(#0B1220,#1E293B);
 }
 
 .hero h1{
-font-size:48px;
+font-size:50px;
+margin-bottom:20px;
 }
 
 .btn{
 background:#2563EB;
 padding:12px 25px;
+border-radius:6px;
 color:white;
 text-decoration:none;
-border-radius:6px;
+display:inline-block;
+margin-top:20px;
 }
 
+.platforms,
 .solutions{
-padding:80px 20px;
+padding:80px 10%;
 text-align:center;
 }
 
@@ -49,47 +53,36 @@ text-align:center;
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
+gap:25px;
+margin-top:40px;
 }
 
 .card{
 background:#1E293B;
-padding:25px;
-margin:10px;
-width:250px;
+padding:30px;
 border-radius:10px;
+width:250px;
+}
+
+.card h3{
+margin-top:0;
 }
 
 .about{
-padding:60px;
+padding:80px 20%;
 text-align:center;
 background:#111827;
+line-height:1.6;
+}
+
+.cta{
+padding:80px;
+text-align:center;
+background:linear-gradient(#1E293B,#2563EB);
 }
 
 footer{
 text-align:center;
-padding:20px;
+padding:30px;
 background:#020617;
-}
-
-.about{
-padding:80px 20px;
-background:#111827;
-max-width:1000px;
-margin:auto;
-line-height:1.7;
-}
-
-.about h2{
-font-size:36px;
-margin-bottom:20px;
-}
-
-.about h3{
-margin-top:30px;
-color:#3B82F6;
-}
-
-.about ul{
-margin-top:10px;
-margin-bottom:20px;
 }
