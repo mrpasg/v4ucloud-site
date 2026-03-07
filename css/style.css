@@ -48,11 +48,10 @@ padding:40px 0;
 
 .hero-banner img{
 width:100%;
-max-width:1200px;
+max-width:1100px;
 height:auto;
-display:block;
-border-radius:10px;
 }
+
 
 /* Hero Content */
 
@@ -140,7 +139,7 @@ color:#cbd5f5;
 /* About */
 
 .about{
-padding:80px 20%;
+padding:60px 12%;
 text-align:center;
 background:#111827;
 line-height:1.7;
