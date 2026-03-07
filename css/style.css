@@ -58,9 +58,11 @@ border-radius:10px;
 
 .hero-content{
 text-align:center;
-margin-top:30px;
-padding:30px;
+margin:20px auto;
+padding:10px 20px;
+max-width:800px;
 }
+
 
 .hero-content h1{
 font-size:42px;
