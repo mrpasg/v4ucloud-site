@@ -23,14 +23,27 @@ text-decoration:none;
 }
 
 .hero{
+background-image:url('../images/banner.jpg');
+background-size:cover;
+background-position:center;
 text-align:center;
-padding:120px 20px;
-background:linear-gradient(#0B1220,#1E293B);
+padding:140px 20px;
 }
 
-.hero h1{
-font-size:50px;
-margin-bottom:20px;
+.hero-content{
+background:rgba(0,0,0,0.5);
+padding:40px;
+border-radius:10px;
+display:inline-block;
+}
+
+.logo{
+height:50px;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
 }
 
 .btn{
