@@ -31,13 +31,20 @@ padding:140px 20px;
 }
 
 .hero-banner{
-background-image:url('../images/banner.jpg');
-background-size:contain;
-background-repeat:no-repeat;
-background-position:center;
-height:600px;
-background-color:#0B1220;
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#020617;
+padding:40px 0;
 }
+
+.hero-banner img{
+max-width:900px;
+width:90%;
+height:auto;
+}
+
 
 .hero-content{
 background:rgba(0,0,0,0.5);
