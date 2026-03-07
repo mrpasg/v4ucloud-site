@@ -42,14 +42,19 @@ nav a:hover
 /* HERO */
 
 .hero{
-text-align:center;
-padding:30px 0;
+display:flex;
+justify-content:center;
+align-items:center;
 background:#020617;
+padding:20px 0;
 }
 
 .hero img{
+display:block;
+margin:auto;
 width:100%;
 max-width:1100px;
+height:auto;
 border-radius:10px;
 }
 
