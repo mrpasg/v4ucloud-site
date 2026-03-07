@@ -16,8 +16,19 @@ align-items:center;
 padding:20px 10%;
 }
 
+.logo-area{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
 .logo{
-height:45px;
+height:40px;
+}
+
+.brand{
+font-size:18px;
+font-weight:bold;
 }
 
 nav a{
@@ -32,14 +43,13 @@ nav a:hover
 
 .hero{
 text-align:center;
-background:#020617;
 padding:30px 0;
+background:#020617;
 }
 
 .hero img{
 width:100%;
 max-width:1100px;
-height:auto;
 border-radius:10px;
 }
 
@@ -47,7 +57,7 @@ border-radius:10px;
 
 .platforms,
 .solutions{
-padding:70px 10%;
+padding:60px 10%;
 text-align:center;
 }
 
@@ -80,14 +90,15 @@ transform:translateY(-5px);
 background:#263548;
 }
 
-.card h3{
-margin-top:0;
+.cloud-icon{
+height:40px;
+margin-bottom:10px;
 }
 
 /* ABOUT */
 
 .about{
-padding:70px 15%;
+padding:60px 15%;
 text-align:center;
 background:#111827;
 line-height:1.7;
@@ -96,7 +107,7 @@ line-height:1.7;
 /* CTA */
 
 .cta{
-padding:80px;
+padding:70px;
 text-align:center;
 background:linear-gradient(#1E293B,#2563EB);
 }
@@ -109,6 +120,8 @@ border-radius:6px;
 text-decoration:none;
 font-weight:bold;
 }
+
+.btn:hover
 
 /* FOOTER */
 
