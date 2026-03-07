@@ -1,13 +1,9 @@
-/* Global */
-
 body{
-font-family: Arial, sans-serif;
+font-family:Arial, sans-serif;
 margin:0;
 background:#0B1220;
 color:white;
 }
-
-/* Header */
 
 header{
 background:#020617;
@@ -21,90 +17,47 @@ padding:20px 10%;
 }
 
 .logo{
-height:50px;
+height:45px;
 }
 
 nav a{
 margin-left:20px;
 color:white;
 text-decoration:none;
-font-size:16px;
 }
 
-nav a:hover{
-color:#3B82F6;
-}
+nav a:hover
 
-/* Banner */
+/* HERO */
 
-.hero-banner{
-width:100%;
-display:flex;
-justify-content:center;
-align-items:center;
+.hero{
+text-align:center;
 background:#020617;
-padding:40px 0;
+padding:30px 0;
 }
 
-.hero-banner img{
+.hero img{
 width:100%;
 max-width:1100px;
 height:auto;
+border-radius:10px;
 }
 
-
-/* Hero Content */
-
-.hero-content{
-text-align:center;
-margin:20px auto;
-padding:10px 20px;
-max-width:800px;
-}
-
-
-.hero-content h1{
-font-size:42px;
-margin-bottom:15px;
-}
-
-.hero-content p{
-font-size:18px;
-color:#cbd5f5;
-}
-
-/* Button */
-
-.btn{
-background:#2563EB;
-padding:12px 25px;
-border-radius:6px;
-color:white;
-text-decoration:none;
-display:inline-block;
-margin-top:20px;
-transition:0.3s;
-}
-
-.btn:hover{
-background:#1d4ed8;
-}
-
-/* Platforms & Solutions */
+/* SECTIONS */
 
 .platforms,
 .solutions{
-padding:80px 10%;
+padding:70px 10%;
 text-align:center;
 }
 
 .platforms h2,
 .solutions h2{
 font-size:32px;
-margin-bottom:20px;
+margin-bottom:10px;
 }
 
-/* Cards */
+/* CARDS */
 
 .cards{
 display:flex;
@@ -116,7 +69,7 @@ margin-top:40px;
 
 .card{
 background:#1E293B;
-padding:30px;
+padding:25px;
 border-radius:10px;
 width:260px;
 transition:0.3s;
@@ -129,25 +82,15 @@ background:#263548;
 
 .card h3{
 margin-top:0;
-margin-bottom:10px;
 }
 
-.card p{
-color:#cbd5f5;
-}
-
-/* About */
+/* ABOUT */
 
 .about{
-padding:60px 12%;
+padding:70px 15%;
 text-align:center;
 background:#111827;
 line-height:1.7;
-}
-
-.about h2{
-font-size:32px;
-margin-bottom:20px;
 }
 
 /* CTA */
@@ -158,20 +101,24 @@ text-align:center;
 background:linear-gradient(#1E293B,#2563EB);
 }
 
-.cta h2{
-font-size:30px;
+.btn{
+background:white;
+color:#2563EB;
+padding:12px 25px;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
 }
 
-/* Footer */
+/* FOOTER */
 
 footer{
 text-align:center;
 padding:30px;
 background:#020617;
-color:#cbd5f5;
 }
 
-/* Responsive */
+/* MOBILE */
 
 @media (max-width:900px){
 
@@ -181,11 +128,7 @@ align-items:center;
 }
 
 .about{
-padding:60px 10%;
-}
-
-.hero-content h1{
-font-size:32px;
+padding:50px 10%;
 }
 
 }
