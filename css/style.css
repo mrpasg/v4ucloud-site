@@ -22,29 +22,26 @@ color:white;
 text-decoration:none;
 }
 
-.hero{
-background-image:url('../images/banner.jpg');
-background-size:cover;
-background-position:center;
-text-align:center;
-padding:140px 20px;
-}
-
 .hero-banner{
 width:100%;
 display:flex;
 justify-content:center;
 align-items:center;
 background:#020617;
-padding:40px 0;
+padding:20px 0;
 }
 
 .hero-banner img{
-max-width:900px;
-width:90%;
+width:100%;
+max-width:1200px;
 height:auto;
+display:block;
 }
 
+.hero-content{
+text-align:center;
+margin-top:20px;
+}
 
 .hero-content{
 background:rgba(0,0,0,0.5);
