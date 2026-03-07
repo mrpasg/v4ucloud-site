@@ -30,6 +30,15 @@ text-align:center;
 padding:140px 20px;
 }
 
+.hero-banner{
+background-image:url('../images/banner.jpg');
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+height:600px;
+background-color:#0B1220;
+}
+
 .hero-content{
 background:rgba(0,0,0,0.5);
 padding:40px;
