@@ -149,4 +149,42 @@ align-items:center;
 padding:50px 10%;
 }
 
+/* V4U Meaning Section */
+
+.v4u-meaning{
+background:#071a2f;
+padding:40px 10%;
+}
+
+.v4u-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.v4u-box{
+display:flex;
+align-items:center;
+gap:20px;
+color:white;
+}
+
+.v-letter{
+font-size:50px;
+color:#14b8a6;
+margin:0;
+font-weight:bold;
+}
+
+.v4u-text h3{
+margin:0;
+font-size:18px;
+}
+
+.v4u-text p{
+margin:4px 0 0 0;
+font-size:14px;
+color:#9ca3af;
+}
 }
