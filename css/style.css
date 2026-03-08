@@ -187,4 +187,67 @@ margin:4px 0 0 0;
 font-size:14px;
 color:#9ca3af;
 }
+
+/* V4U Top Banner */
+
+.v4u-bar{
+background:linear-gradient(90deg,#021c34,#052a47,#063b55);
+padding:18px 8%;
+border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+.v4u-wrapper{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.v4u-item{
+display:flex;
+align-items:center;
+gap:14px;
+color:white;
+}
+
+.v4u-letter{
+font-size:46px;
+font-weight:700;
+color:#20c5d8;
+}
+
+.v4u-text h4{
+margin:0;
+font-size:18px;
+font-weight:600;
+}
+
+.v4u-text p{
+margin:2px 0 0;
+font-size:14px;
+color:#9fb7c8;
+}
+
+.v4u-divider{
+width:1px;
+height:40px;
+background:rgba(255,255,255,0.1);
+}
+
+/* Mobile */
+
+@media (max-width:900px){
+
+.v4u-wrapper{
+flex-direction:column;
+gap:15px;
+}
+
+.v4u-divider{
+display:none;
+}
+
+}
+
 }
