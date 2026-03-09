@@ -37,7 +37,9 @@ color:white;
 text-decoration:none;
 }
 
-nav a:hover
+nav a:hover{
+color:#20c5d8;
+}
 
 /* V4U TOP BAR */
 
@@ -170,7 +172,9 @@ text-decoration:none;
 font-weight:bold;
 }
 
-.btn:hover
+.btn:hover{
+background:#e5e7eb;
+}
 
 /* FOOTER */
 
@@ -245,7 +249,9 @@ border-radius:6px;
 cursor:pointer;
 }
 
-.contact-form button:hover
+.contact-form button:hover{
+background:#1d4ed8;
+}
 
 .contact-info{
 text-align:left;
