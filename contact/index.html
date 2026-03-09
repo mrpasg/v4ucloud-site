@@ -1,15 +1,208 @@
-<form action="https://formsubmit.co/info@v4ucloud.com" method="POST" class="contact-form">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | V4U Cloud</title>
+
+<link rel="stylesheet" href="/css/style.css">
+
+<style>
+
+.contact-wrapper{
+max-width:900px;
+margin:auto;
+padding:80px 20px;
+text-align:center;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+margin-top:40px;
+}
+
+.contact-info{
+text-align:left;
+}
+
+.contact-info h3{
+margin-top:20px;
+}
+
+.contact-form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border-radius:6px;
+border:none;
+font-size:14px;
+}
+
+.contact-form button{
+background:#2563EB;
+color:white;
+padding:12px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-size:15px;
+}
+
+.contact-form button:hover{
+background:#1e4ed8;
+}
+
+/* success popup */
+
+.popup{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:#111827;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
+display:none;
+z-index:1000;
+}
+
+.popup.show{
+display:block;
+}
+
+.popup button{
+margin-top:20px;
+padding:8px 18px;
+border:none;
+background:#2563EB;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+@media(max-width:800px){
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="logo-area">
+<img src="/images/logo.png" class="logo">
+<span class="brand">V4U Cloud</span>
+</div>
+
+<nav>
+<a href="/">Home</a>
+<a href="/#platforms">Platforms</a>
+<a href="/#solutions">Solutions</a>
+<a href="/#about">About</a>
+<a href="/contact">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+<section class="contact-wrapper">
+
+<h1>Contact V4U Cloud</h1>
+<p>Have a project in mind? Let's talk.</p>
+
+<div class="contact-grid">
+
+<div class="contact-info">
+
+<h3>📧 Email</h3>
+<p>info@v4ucloud.com</p>
+
+<h3>🌐 Services</h3>
+<p>Cloud Infrastructure</p>
+<p>DevOps Automation</p>
+<p>Data Engineering</p>
+
+<h3>☁ Platforms</h3>
+<p>AWS | Azure | Google Cloud</p>
+
+</div>
+
+<form 
+action="https://formsubmit.co/info@v4ucloud.com" 
+method="POST"
+class="contact-form"
+onsubmit="showPopup()"
+>
 
 <input type="text" name="name" placeholder="Your Name" required>
 
 <input type="email" name="email" placeholder="Your Email" required>
 
-<textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
 <button type="submit">Send Message</button>
 
 <input type="hidden" name="_subject" value="New Contact Message - V4U Cloud">
 
-<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_captcha" value="true">
+
+<input type="hidden" name="_autoresponse"
+value="Thank you for contacting V4U Cloud. Our team will get back to you shortly.">
 
 </form>
+
+</div>
+
+</section>
+
+<div class="popup" id="successPopup">
+
+<h2>✅ Message Sent</h2>
+<p>Thank you for contacting V4U Cloud.</p>
+<p>We will respond shortly.</p>
+
+<button onclick="closePopup()">Close</button>
+
+</div>
+
+<script>
+
+function showPopup(){
+
+setTimeout(()=>{
+document.getElementById("successPopup").classList.add("show")
+},500)
+
+}
+
+function closePopup(){
+
+document.getElementById("successPopup").classList.remove("show")
+
+}
+
+</script>
+
+</body>
+
+</html>
