@@ -1,5 +1,7 @@
 export async function onRequestPost(context) {
 
+try{
+
 const data = await context.request.json();
 
 const message = `
@@ -12,7 +14,7 @@ Message:
 ${data.message}
 `;
 
-await fetch("https://api.mailchannels.net/tx/v1/send", {
+const response = await fetch("https://api.mailchannels.net/tx/v1/send", {
 method: "POST",
 headers: {
 "content-type": "application/json"
@@ -27,7 +29,10 @@ from: {
 email: "info@v4ucloud.com",
 name: "V4U Cloud Website"
 },
-subject: "New Contact Message",
+reply_to: {
+email: data.email
+},
+subject: "New Contact Message - V4U Cloud",
 content: [
 {
 type: "text/plain",
@@ -37,6 +42,16 @@ value: message
 })
 });
 
-return new Response("Email sent", { status: 200 });
+if(response.ok){
+return new Response("Email sent",{status:200});
+}
+
+return new Response("Email failed",{status:500});
+
+}catch(error){
+
+return new Response("Server error",{status:500});
+
+}
 
 }
