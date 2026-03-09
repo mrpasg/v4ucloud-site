@@ -25,7 +25,7 @@ to:[{email:"[info@v4ucloud.com](mailto:info@v4ucloud.com)"}]
 ],
 from:{
 email:"[contact@v4ucloud.com](mailto:contact@v4ucloud.com)",
-name:"V4U Cloud"
+name:"V4U Cloud Website"
 },
 subject:"New Contact Message",
 content:[
@@ -37,6 +37,6 @@ value:body
 })
 });
 
-return new Response("OK");
+return new Response("Email sent",{status:200});
 
 }
