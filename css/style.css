@@ -184,28 +184,6 @@ padding:30px;
 background:#020617;
 }
 
-/* MOBILE */
-
-@media (max-width:900px){
-
-.cards{
-flex-direction:column;
-align-items:center;
-}
-
-.about{
-padding:50px 10%;
-}
-
-.v4u-wrapper{
-flex-direction:column;
-gap:20px;
-}
-
-.v4u-divider{
-display:none;
-}
-
 /* CONTACT PAGE */
 
 .contact-page{
@@ -265,11 +243,31 @@ margin-top:20px;
 
 @media (max-width:900px){
 
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+.about{
+padding:50px 10%;
+}
+
+.v4u-wrapper{
+flex-direction:column;
+gap:20px;
+}
+
+.v4u-divider{
+display:none;
+}
+
 .contact-grid{
 grid-template-columns:1fr;
 }
 
 }
+
+
 
 
 
