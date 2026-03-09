@@ -1,97 +1,15 @@
-<!DOCTYPE html>
+<form action="https://formsubmit.co/info@v4ucloud.com" method="POST" class="contact-form">
 
-<html lang="en">
+<input type="text" name="name" placeholder="Your Name" required>
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<input type="email" name="email" placeholder="Your Email" required>
 
-<title>Contact | V4U Cloud</title>
-
-<link rel="stylesheet" href="/css/style.css">
-
-<style>
-
-.contact-page{
-padding:80px 10%;
-text-align:center;
-}
-
-.contact-form{
-max-width:500px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-.contact-form input,
-.contact-form textarea{
-padding:12px;
-border-radius:6px;
-border:none;
-}
-
-.contact-form button{
-background:#2563EB;
-color:white;
-padding:12px;
-border:none;
-border-radius:6px;
-cursor:pointer;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<div class="container">
-
-<div class="logo-area">
-<img src="/images/logo.png" class="logo">
-<span class="brand">V4U Cloud</span>
-</div>
-
-<nav>
-<a href="/">Home</a>
-<a href="/#platforms">Platforms</a>
-<a href="/#solutions">Solutions</a>
-<a href="/#about">About</a>
-<a href="/contact">Contact</a>
-</nav>
-
-</div>
-
-</header>
-
-<section class="contact-page">
-
-<h1>Contact V4U Cloud</h1>
-
-<p>Have a project in mind? Let's talk.</p>
-
-<form id="contactForm" class="contact-form">
-
-<input id="name" type="text" placeholder="Your Name" required>
-
-<input id="email" type="email" placeholder="Your Email" required>
-
-<textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+<textarea name="message" placeholder="Your Message" rows="5" required></textarea>
 
 <button type="submit">Send Message</button>
 
-<p id="status"></p>
+<input type="hidden" name="_subject" value="New Contact Message - V4U Cloud">
+
+<input type="hidden" name="_captcha" value="false">
 
 </form>
-
-</section>
-
-<script src="/js/script.js"></script>
-
-</body>
-
-</html>
