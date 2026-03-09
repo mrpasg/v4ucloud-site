@@ -1,19 +1,42 @@
-document.getElementById("contactForm").addEventListener("submit", async function(e){
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async function(e) {
 
 e.preventDefault();
+
+const status = document.getElementById("status");
 
 const name = document.getElementById("name").value;
 const email = document.getElementById("email").value;
 const message = document.getElementById("message").value;
 
-const res = await fetch("/api/contact",{
-method:"POST",
-headers:{
-"Content-Type":"application/json"
+status.innerText = "Sending message...";
+
+try {
+
+const res = await fetch("/api/contact", {
+method: "POST",
+headers: {
+"Content-Type": "application/json"
 },
-body:JSON.stringify({name,email,message})
+body: JSON.stringify({
+name: name,
+email: email,
+message: message
+})
 });
 
-document.getElementById("status").innerText="Message sent successfully!";
+if (res.ok) {
+status.innerText = "✅ Message sent successfully!";
+form.reset();
+} else {
+status.innerText = "❌ Failed to send message.";
+}
+
+} catch (error) {
+
+status.innerText = "❌ Network error.";
+
+}
 
 });
