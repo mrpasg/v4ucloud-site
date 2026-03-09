@@ -3,7 +3,7 @@ export async function onRequestPost(context){
 const data = await context.request.json();
 
 const body = `
-New contact form message
+New message from v4ucloud.com
 
 Name: ${data.name}
 Email: ${data.email}
@@ -25,7 +25,7 @@ to:[{email:"[info@v4ucloud.com](mailto:info@v4ucloud.com)"}]
 ],
 from:{
 email:"[contact@v4ucloud.com](mailto:contact@v4ucloud.com)",
-name:"V4U Cloud Website"
+name:"V4U Cloud"
 },
 subject:"New Contact Message",
 content:[
@@ -37,6 +37,6 @@ value:body
 })
 });
 
-return new Response("Email sent",{status:200});
+return new Response("OK");
 
 }

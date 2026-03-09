@@ -6,19 +6,14 @@ const name = document.getElementById("name").value;
 const email = document.getElementById("email").value;
 const message = document.getElementById("message").value;
 
-const response = await fetch("/api/contact",{
+const res = await fetch("/api/contact",{
 method:"POST",
 headers:{
 "Content-Type":"application/json"
 },
-body:JSON.stringify({
-name,
-email,
-message
-})
+body:JSON.stringify({name,email,message})
 });
 
-document.getElementById("status").innerText =
-"Message sent successfully!";
+document.getElementById("status").innerText="Message sent successfully!";
 
 });

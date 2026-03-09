@@ -3,13 +3,45 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Contact | V4U Cloud</title>
 
 <link rel="stylesheet" href="/css/style.css">
+
+<style>
+
+.contact-page{
+padding:80px 10%;
+text-align:center;
+}
+
+.contact-form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border-radius:6px;
+border:none;
+}
+
+.contact-form button{
+background:#2563EB;
+color:white;
+padding:12px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+</style>
 
 </head>
 
@@ -40,23 +72,26 @@
 
 <h1>Contact V4U Cloud</h1>
 
-<form id="contactForm">
+<p>Have a project in mind? Let's talk.</p>
 
-<input type="text" id="name" placeholder="Your Name" required>
+<form id="contactForm" class="contact-form">
 
-<input type="email" id="email" placeholder="Your Email" required>
+<input id="name" type="text" placeholder="Your Name" required>
 
-<textarea id="message" placeholder="Your Message" required></textarea>
+<input id="email" type="email" placeholder="Your Email" required>
+
+<textarea id="message" placeholder="Your Message" rows="5" required></textarea>
 
 <button type="submit">Send Message</button>
 
-</form>
-
 <p id="status"></p>
+
+</form>
 
 </section>
 
 <script src="/js/script.js"></script>
 
 </body>
+
 </html>
