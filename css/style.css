@@ -6,7 +6,9 @@
 
 /* ── RESET & BASE ── */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -26,7 +28,7 @@ body {
 
 header {
   background: #020617;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -93,7 +95,7 @@ nav a.active {
 .v4u-bar {
   background: linear-gradient(90deg, #021c34, #052a47, #063b55);
   padding: 18px 8%;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .v4u-wrapper {
@@ -132,7 +134,7 @@ nav a.active {
 .v4u-divider {
   width: 1px;
   height: 42px;
-  background: rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /* ── HERO ── */
@@ -151,7 +153,7 @@ nav a.active {
   max-width: 1200px;
   height: auto;
   display: block;
-  opacity: 0.65;
+  opacity: 0.9;
 }
 
 .hero-overlay {
@@ -167,7 +169,7 @@ nav a.active {
   line-height: 1.15;
   margin: 0 0 12px;
   color: #fff;
-  text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
 }
 
 .hero-overlay p {
@@ -234,15 +236,15 @@ nav a.active {
   padding: 30px 24px;
   border-radius: 14px;
   width: 260px;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   text-align: center;
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 40px rgba(32,197,216,0.12);
-  border-color: rgba(32,197,216,0.3);
+  box-shadow: 0 12px 40px rgba(32, 197, 216, 0.12);
+  border-color: rgba(32, 197, 216, 0.3);
   background: #263548;
 }
 
@@ -278,7 +280,7 @@ nav a.active {
   margin: 0 auto 18px;
   font-size: 22px;
   color: #20c5d8;
-  border: 1px solid rgba(32,197,216,0.2);
+  border: 1px solid rgba(32, 197, 216, 0.2);
 }
 
 .capability-card h3 {
@@ -357,7 +359,7 @@ nav a.active {
 
 footer {
   background: #020617;
-  border-top: 1px solid rgba(255,255,255,0.07);
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
   padding: 40px 8% 24px;
 }
 
@@ -465,7 +467,7 @@ footer {
   padding: 18px;
   background: #1E293B;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   margin-bottom: 14px;
 }
 
@@ -512,7 +514,7 @@ footer {
   background: #1E293B;
   padding: 32px;
   border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.06);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .contact-form-box form {
@@ -524,7 +526,7 @@ footer {
 .contact-form-box input,
 .contact-form-box textarea {
   padding: 12px 14px;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   font-size: 14px;
   font-family: inherit;
@@ -587,7 +589,7 @@ footer {
   background: #111827;
   padding: 36px;
   border-radius: 14px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   display: none;
   z-index: 1000;
   text-align: center;
@@ -624,7 +626,7 @@ footer {
     flex-direction: column;
     padding: 20px 8%;
     gap: 0;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   nav.open {
@@ -635,7 +637,7 @@ footer {
     margin: 0;
     padding: 12px 0;
     font-size: 15px;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   }
 
   nav a:last-child {
