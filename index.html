@@ -1,186 +1,206 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="V4U Cloud — Expert cloud infrastructure, DevOps automation, and data engineering on AWS, Azure, and Google Cloud.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="V4U Cloud">
+<meta property="og:description" content="Scalable, secure cloud solutions on AWS, Azure, and Google Cloud. Built for modern businesses.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://v4ucloud.com">
 
-<title>V4U Cloud</title>
+<title>V4U Cloud | Cloud Infrastructure & DevOps Experts</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
 <header>
+  <div class="container">
 
-<div class="container">
+    <div class="logo-area">
+      <img src="images/logo.png" alt="V4U Cloud Logo" class="logo">
+      <span class="brand">V4U Cloud</span>
+    </div>
 
-<div class="logo-area">
-<img src="images/logo.png" class="logo">
-<span class="brand">V4U Cloud</span>
-</div>
+    <nav id="main-nav">
+      <a href="#" class="nav-link active">Home</a>
+      <a href="#platforms" class="nav-link">Platforms</a>
+      <a href="#solutions" class="nav-link">Solutions</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="/contact/" class="nav-link">Contact</a>
+    </nav>
 
-<nav>
-<a href="#">Home</a>
-<a href="#platforms">Platforms</a>
-<a href="#solutions">Solutions</a>
-<a href="#about">About</a>
-<a href="/contact.html">Contact</a>
-</nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
 
-</div>
-
+  </div>
 </header>
 
 <!-- V4U MEANING BAR -->
 
 <section class="v4u-bar">
+  <div class="v4u-wrapper">
 
-<div class="v4u-wrapper">
+    <div class="v4u-item">
+      <span class="v4u-letter">V</span>
+      <div class="v4u-text">
+        <h4>We</h4>
+        <p>Our dedicated team of cloud experts</p>
+      </div>
+    </div>
 
-<div class="v4u-item">
-<span class="v4u-letter">V</span>
+    <div class="v4u-divider"></div>
 
-<div class="v4u-text">
-<h4>We</h4>
-<p>Our dedicated team of cloud experts</p>
-</div>
+    <div class="v4u-item">
+      <span class="v4u-letter">4</span>
+      <div class="v4u-text">
+        <h4>For</h4>
+        <p>Committed to your success, always</p>
+      </div>
+    </div>
 
-</div>
+    <div class="v4u-divider"></div>
 
-<div class="v4u-divider"></div>
+    <div class="v4u-item">
+      <span class="v4u-letter">U</span>
+      <div class="v4u-text">
+        <h4>You</h4>
+        <p>Every solution built around your needs</p>
+      </div>
+    </div>
 
-<div class="v4u-item">
-<span class="v4u-letter">4</span>
-
-<div class="v4u-text">
-<h4>For</h4>
-<p>Committed to your success, always</p>
-</div>
-
-</div>
-
-<div class="v4u-divider"></div>
-
-<div class="v4u-item">
-<span class="v4u-letter">U</span>
-
-<div class="v4u-text">
-<h4>You</h4>
-<p>Every solution built around your needs</p>
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
 <!-- HERO BANNER -->
 
 <section class="hero">
-
-<img src="images/banner.jpg" alt="V4U Cloud Banner">
-
+  <div class="hero-overlay">
+    <h1>Cloud Solutions<br>Built for Scale</h1>
+    <p>Infrastructure · Data · DevOps · Security</p>
+    <a href="/contact/" class="btn btn-hero">Start a Project</a>
+  </div>
+  <img src="images/banner.jpg" alt="V4U Cloud – Cloud Infrastructure Banner">
 </section>
 
 <!-- CLOUD PLATFORMS -->
 
 <section class="platforms" id="platforms">
+  <h2>Cloud Platforms</h2>
+  <p class="section-subtitle">We deliver enterprise-grade solutions across all major cloud providers.</p>
 
-<h2>Cloud Platforms</h2>
+  <div class="cards">
 
-<div class="cards">
+    <div class="card platform-card">
+      <img src="images/aws.png" class="cloud-icon" alt="Amazon Web Services">
+      <h3>AWS Solutions</h3>
+      <p>Scalable cloud infrastructure built on Amazon Web Services — EC2, S3, Lambda, RDS, and more.</p>
+    </div>
 
-<div class="card">
-<img src="images/aws.png" class="cloud-icon">
-<h3>AWS Solutions</h3>
-<p>Scalable cloud infrastructure built on Amazon Web Services.</p>
-</div>
+    <div class="card platform-card">
+      <img src="images/azure.png" class="cloud-icon" alt="Microsoft Azure">
+      <h3>Azure Solutions</h3>
+      <p>Enterprise-grade cloud environments powered by Microsoft Azure — AKS, Functions, and Synapse.</p>
+    </div>
 
-<div class="card">
-<img src="images/azure.png" class="cloud-icon">
-<h3>Azure Solutions</h3>
-<p>Enterprise-grade cloud environments powered by Microsoft Azure.</p>
-</div>
+    <div class="card platform-card">
+      <img src="images/gcp.png" class="cloud-icon" alt="Google Cloud Platform">
+      <h3>Google Cloud</h3>
+      <p>Data-driven architectures built on Google Cloud Platform — BigQuery, GKE, and Vertex AI.</p>
+    </div>
 
-<div class="card">
-<img src="images/gcp.png" class="cloud-icon">
-<h3>Google Cloud</h3>
-<p>Data-driven architectures built on Google Cloud Platform.</p>
-</div>
-
-</div>
-
+  </div>
 </section>
 
 <!-- SOLUTIONS -->
 
 <section class="solutions" id="solutions">
+  <h2>Our Capabilities</h2>
+  <p class="section-subtitle">End-to-end cloud expertise across infrastructure, data, and operations.</p>
 
-<h2>Our Capabilities</h2>
+  <div class="cards">
 
-<div class="cards">
+    <div class="card capability-card">
+      <div class="card-icon"><i class="fas fa-server"></i></div>
+      <h3>Cloud Infrastructure</h3>
+      <p>Design and deploy resilient, scalable cloud architectures tailored to your workloads.</p>
+    </div>
 
-<div class="card">
-<h3>Cloud Infrastructure</h3>
-<p>Design and deploy scalable cloud architectures.</p>
-</div>
+    <div class="card capability-card">
+      <div class="card-icon"><i class="fas fa-database"></i></div>
+      <h3>Data Engineering</h3>
+      <p>Build high-performance data platforms, pipelines, and warehouses for analytics at scale.</p>
+    </div>
 
-<div class="card">
-<h3>Data Engineering</h3>
-<p>Build high-performance data platforms and pipelines.</p>
-</div>
+    <div class="card capability-card">
+      <div class="card-icon"><i class="fas fa-code-branch"></i></div>
+      <h3>DevOps Automation</h3>
+      <p>Accelerate delivery with CI/CD pipelines, IaC, containerisation, and GitOps workflows.</p>
+    </div>
 
-<div class="card">
-<h3>DevOps Automation</h3>
-<p>Accelerate delivery through CI/CD pipelines.</p>
-</div>
+    <div class="card capability-card">
+      <div class="card-icon"><i class="fas fa-shield-halved"></i></div>
+      <h3>Cloud Security</h3>
+      <p>Harden your cloud environment with IAM, network policies, compliance, and threat monitoring.</p>
+    </div>
 
-<div class="card">
-<h3>Cloud Security</h3>
-<p>Secure production-ready cloud environments.</p>
-</div>
-
-</div>
-
+  </div>
 </section>
 
 <!-- ABOUT -->
 
 <section class="about" id="about">
-
-<h2>About V4U Cloud</h2>
-
-<p>
-At V4U Cloud, we engineer scalable, secure, and intelligent cloud ecosystems for modern businesses.
-</p>
-
-<p>
-We specialize in Cloud Infrastructure, Data Engineering, and DevOps automation to help organizations build reliable, high-performance systems.
-</p>
-
+  <h2>About V4U Cloud</h2>
+  <p>
+    At V4U Cloud, we engineer scalable, secure, and intelligent cloud ecosystems for modern businesses.
+  </p>
+  <p>
+    We specialise in Cloud Infrastructure, Data Engineering, and DevOps automation to help organisations
+    build reliable, high-performance systems — on AWS, Azure, and Google Cloud.
+  </p>
 </section>
 
 <!-- CTA -->
 
-<section class="cta" id="contact">
-
-<h2>Build Your Cloud Infrastructure with Confidence</h2>
-
-<a class="btn">Contact Us</a>
-
+<section class="cta">
+  <h2>Build Your Cloud Infrastructure with Confidence</h2>
+  <p>Let's design the right solution for your business — talk to our cloud team today.</p>
+  <a href="/contact/" class="btn">Contact Us</a>
 </section>
 
+<!-- FOOTER -->
+
 <footer>
-
-<p>© 2026 V4U Cloud</p>
-
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="V4U Cloud Logo" class="footer-logo">
+      <span>V4U Cloud</span>
+    </div>
+    <div class="footer-links">
+      <a href="#platforms">Platforms</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#about">About</a>
+      <a href="/contact/">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="mailto:info@v4ucloud.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 V4U Cloud. All rights reserved.</p>
 </footer>
 
-</body>
+<script src="/js/script.js" defer></script>
 
+</body>
 </html>
